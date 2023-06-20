@@ -30,12 +30,11 @@ const url="https://us11.api.mailchimp.com/3.0/lists/88e6ffbf49";
 
 const options={
   method:"POST",
-  auth:"siri:e0e726b8ea340142fa31ad6462f35f80-us11"
+  auth:"siri:9cfc2422508ee139fd03bf867e832906-us11"
 
 }
 const request=https.request(url,options,function(response){
   console.log(response.statusCode);
-  console.log(response);
 if(response.statusCode === 200){
     res.sendFile(__dirname + "/success.html");
 }
